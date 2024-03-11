@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="CustomControl.FanUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CustomControl"
+             mc:Ignorable="d" >
+    
+    <StackPanel Background="White">
+
+        <local:FanCC Margin="0,0,0,10" FanOn="{Binding Mode=TwoWay, Path=IsChecked, ElementName=switch}"/>
+        <CheckBox x:Name="switch" HorizontalAlignment="Center" Background="White" Content="Switch"/>
+
+    </StackPanel>
+</UserControl>
